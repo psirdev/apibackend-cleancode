@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "01c8624f-0842-4af8-b8c3-e11f5401c316",
+		"name": "apibackend-ddd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BUSINESS PHYSICAL",
+			"item": [
+				{
+					"name": "REVIEWS",
+					"item": [
+						{
+							"name": "Get all reviews of a business (id:1)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/1/{{endpointReviews}}",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{endpointBusiness}}",
+										"1",
+										"{{endpointReviews}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post review for a business (id:1)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"reviewText\": \"This shop is amazing! Maybe I'll come back!\",\r\n    \"rating\": 5,\r\n    \"userName\": \"user\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/1/{{endpointReviews}}",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{endpointBusiness}}",
+										"1",
+										"{{endpointReviews}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get single business (id:1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/1",
+							"protocol": "{{scheme}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{endpointBusiness}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post business (id:1)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeBusiness\":\"physical\",\r\n    \"name\": \"Sample Physical Shop\",\r\n    \"email\": \"physical@sample.com\",\r\n    \"address\": \"Fake Street 123\",\r\n    \"phone\": \"666 11 22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/",
+							"protocol": "{{scheme}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{endpointBusiness}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BUSINESS ONLINE",
+			"item": [
+				{
+					"name": "REVIEWS",
+					"item": [
+						{
+							"name": "Get all reviews of a business (id: 2)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/2/{{endpointReviews}}",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{endpointBusiness}}",
+										"2",
+										"{{endpointReviews}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post review for a business  (id: 2)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"reviewText\": \"I don't like this store!\",\r\n    \"rating\": 1,\r\n    \"userName\": \"hater\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/2/{{endpointReviews}}",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{endpointBusiness}}",
+										"2",
+										"{{endpointReviews}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get single business  (id: 2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/2",
+							"protocol": "{{scheme}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{endpointBusiness}}",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post business  (id: 2)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeBusiness\":\"online\",\r\n    \"name\": \"Online Shop\",\r\n    \"email\": \"online@sample.com\",\r\n    \"numberOfReviews\": 5,\r\n    \"website\": \"www.sample.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{scheme}}://{{host}}:{{port}}/{{endpointBusiness}}/",
+							"protocol": "{{scheme}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{endpointBusiness}}",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost",
+			"type": "default"
+		},
+		{
+			"key": "scheme",
+			"value": "http",
+			"type": "default"
+		},
+		{
+			"key": "port",
+			"value": "8000",
+			"type": "default"
+		},
+		{
+			"key": "endpointBusiness",
+			"value": "business",
+			"type": "default"
+		},
+		{
+			"key": "endpointReviews",
+			"value": "reviews",
+			"type": "default"
+		}
+	]
+}
