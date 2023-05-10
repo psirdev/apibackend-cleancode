@@ -1,8 +1,8 @@
 # API Example Backend with DDD and Node.JS - Rating Businesses
 
-This is a sample API backend created using DDD and Node.js (with Express.js) which follows the TDD methodology and adheres to clean code principles. It includes two types of tests: end-to-end and performance tests, ensuring the reliability and stability of the system.
+This is a sample API backend created using DDD and Node.js (with Express.js) which follows the TDD methodology and sticks to clean code principles. It includes two types of tests: end-to-end and performance tests, ensuring the reliability and stability of the system.
 
-This API is designed as a real-world example of a platform that allows businesses to register, create, and view reviews. Please note that the permission layer is not included in this example.
+This API is designed as a real-world example of a platform that allows users to create businesses, view and do reviews of the business. Please note that the permission layer is not included in this example, so anyone can insert reviews.
 
 ## Frameworks
 
@@ -52,8 +52,6 @@ To start the server, you can run:
 `npm run dev`
 
 This will start the server in development mode, which will automatically restart the server whenever you make changes to the code.
-
-## Schema about 
 
 ## Running the tests
 
