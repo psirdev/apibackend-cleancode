@@ -1,6 +1,6 @@
-# API Example Backend with DDD and Node.JS - Rating Businesses
+# API Example Backend with Clean Code and Node.JS - Rating Businesses
 
-This is a sample API backend created using DDD and Node.js (with Express.js) which follows the TDD methodology and sticks to clean code principles. It includes two types of tests: end-to-end and performance tests, ensuring the reliability and stability of the system.
+This is a sample API backend created using Clean Code and Node.js (with Express.js) which follows the TDD methodology and sticks to clean code principles. It includes two types of tests: end-to-end and performance tests, ensuring the reliability and stability of the system.
 
 This API is designed as a real-world example of a platform that allows users to create businesses, view and do reviews of the business. Please note that the permission layer is not included in this example, so anyone can insert reviews.
 
@@ -18,19 +18,19 @@ This API is designed as a real-world example of a platform that allows users to 
 
 ## Logical Model
 
-![image](https://github.com/psirdev/apibackend-ddd/assets/24595118/bfdb5e3f-6d0e-4aa7-bc7b-77f26badfcd0)
+![image](https://github.com/psirdev/apibackend-cleancode/assets/24595118/bfdb5e3f-6d0e-4aa7-bc7b-77f26badfcd0)
 
 ## Schema of the API REST
 
 You can see more info on the postman_collection in JSON.
 
-![image](https://github.com/psirdev/apibackend-ddd/assets/24595118/4d7a5399-51ff-4f1b-8abf-5cbb72bf027c)
+![image](https://github.com/psirdev/apibackend-cleancode/assets/24595118/4d7a5399-51ff-4f1b-8abf-5cbb72bf027c)
 
 ## Getting Started
 
 To get started, you will need to clone this repository to your local machine:
 
-`git clone https://github.com/psirdev/apibackend-ddd.git`
+`git clone https://github.com/psirdev/apibackend-cleancode.git`
 
 Next, you will need to install the dependencies by running:
 
